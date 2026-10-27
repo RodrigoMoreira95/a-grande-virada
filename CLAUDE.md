@@ -22,17 +22,20 @@ Referência visual: `C:\Users\usuario\Desktop\site.svg` (layout 1920px; imagens 
 - Manter este arquivo atualizado a cada atividade concluída
 
 ## Pendências
-- [ ] Definir o link dos dois botões (hoje `href="#"`)
-- [ ] Instalar e autenticar o GitHub CLI (`winget install --id GitHub.cli`, depois `gh auth login`)
-- [ ] Criar o repositório público e fazer o push
-- [ ] Ativar o GitHub Pages (branch `main`, raiz) e confirmar a URL
-- [ ] Trocar `og:image` por URL absoluta após saber a URL final do site
+- [x] Definir o link dos dois botões: ambos ("Quero descobrir a oferta da Black" e "Quero estar na revelação") apontam para `https://go.tassolago.com/pay/a312fe4a-fe42-41a0-88f1-f192aa7ec42d`
+- [ ] Publicar o direcionamento dos botões (`git push`) e confirmar os links no site
+- [ ] Instalar e autenticar o GitHub CLI (opcional: `winget install --id GitHub.cli`, depois `gh auth login`)
+- [x] Criar o repositório público e fazer o push (`RodrigoMoreira95/a-grande-virada`)
+- [x] Ativar o GitHub Pages (branch `main`, raiz): https://RodrigoMoreira95.github.io/a-grande-virada/
+- [ ] Trocar `og:image` por URL absoluta: `https://RodrigoMoreira95.github.io/a-grande-virada/assets/copy-tasso-lago.png`
 
 ## Histórico de atividades
 - 2026-10-26: SSH ed25519 criado e adicionado ao GitHub (usuário RodrigoMoreira95); conexão testada
 - 2026-10-26: Análise do `site.svg`; 5 imagens extraídas e otimizadas para `assets/`
 - 2026-10-26: Página criada (`index.html`, `style.css`) e revisada em 1440px e 390px
 - 2026-10-26: `git init` na branch main e commit inicial
+- 2026-10-26: Push para `origin/main`; GitHub Pages ativado e site respondendo (HTTP 200)
+- 2026-10-26: Botões do hero e da seção final direcionados ao link de pagamento (commit local, ainda sem push)
 
 ## Como editar
 - Textos: `index.html`. Cores e espaçamentos: variáveis `:root` no topo de `style.css`
