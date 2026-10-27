@@ -6,11 +6,19 @@
   <title>A Grande Virada | Copy Tasso Lago</title>
   <meta name="description" content="O lançamento que marca a maior virada da história do Tasso. Dessa vez, ele opera por você. 27 de outubro, 20h, exclusivo no Grupo VIP.">
   <meta name="theme-color" content="#050505">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+  <link rel="canonical" href="https://rodrigomoreira95.github.io/a-grande-virada/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://rodrigomoreira95.github.io/a-grande-virada/">
   <meta property="og:title" content="A Grande Virada | Copy Tasso Lago">
   <meta property="og:description" content="Dessa vez, eu vou operar por você. 27 de outubro, 20h, exclusivo no Grupo VIP.">
-  <meta property="og:image" content="assets/copy-tasso-lago.png">
+  <meta property="og:image" content="https://rodrigomoreira95.github.io/a-grande-virada/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Vem aí Copy Tasso Lago: Tasso segurando um celular com a carteira de criptomoedas">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -24,7 +32,7 @@
           <div class="logo">
             <img class="logo__inf" src="assets/logo-infinito.png" alt="" width="300" height="144">
             <img class="logo__sub" src="assets/logo-agrande.png" alt="" width="600" height="54">
-            <img class="logo__main" src="assets/logo-virada.png" alt="A Grande Virada" width="800" height="136">
+            <img class="logo__main" src="assets/logo-virada.webp" alt="A Grande Virada" width="800" height="136">
           </div>
           <p class="eyebrow">Depois de 9 anos no mercado, eu preciso te falar uma coisa:</p>
           <h1 class="hero__title">
@@ -32,7 +40,16 @@
           </h1>
           <p class="hero__text">Chega de tentar adivinhar qual moeda comprar, quando entrar e quando sair. Depois de 9 anos, eu decidi fazer uma coisa que nunca fiz:</p>
           <p class="hero__highlight gold-text">Dessa vez, eu vou operar por você.</p>
-          <a class="btn" href="https://go.tassolago.com/pay/a312fe4a-fe42-41a0-88f1-f192aa7ec42d">Quero descobrir a oferta da Black</a>
+          <a class="btn" id="cta-principal" href="https://go.tassolago.com/pay/a312fe4a-fe42-41a0-88f1-f192aa7ec42d">Quero descobrir a oferta da Black</a>
+          <div class="countdown" id="countdown" hidden>
+            <p class="countdown__label" id="countdown-label">Começa em</p>
+            <div class="countdown__grid" id="countdown-grid" role="timer" aria-label="Contagem regressiva para 27 de outubro às 20h">
+              <div><span id="cd-d">00</span><small>dias</small></div>
+              <div><span id="cd-h">00</span><small>horas</small></div>
+              <div><span id="cd-m">00</span><small>min</small></div>
+              <div><span id="cd-s">00</span><small>seg</small></div>
+            </div>
+          </div>
           <ul class="meta">
             <li>
               <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 10h18M8 2.5v4M16 2.5v4"/></svg>
@@ -58,7 +75,7 @@
           O lançamento que marca a <span class="gold-text">maior virada da história do Tasso</span>, agora, ele opera por você.
         </h2>
 
-        <img class="reveal__img" src="assets/copy-tasso-lago.png" alt="Vem aí Copy Tasso Lago: Tasso segurando um celular com a carteira de criptomoedas, diante de gráficos de mercado" width="821" height="589" loading="lazy">
+        <img class="reveal__img" src="assets/copy-tasso-lago.webp" alt="Vem aí Copy Tasso Lago: Tasso segurando um celular com a carteira de criptomoedas, diante de gráficos de mercado" width="821" height="589" loading="lazy">
 
         <ul class="cards">
           <li class="card">
@@ -91,5 +108,9 @@
   <footer class="footer">
     <p>Todos os direitos reservados © 2026</p>
   </footer>
+
+  <a class="sticky-cta" id="sticky-cta" href="https://go.tassolago.com/pay/a312fe4a-fe42-41a0-88f1-f192aa7ec42d" aria-hidden="true" tabindex="-1">Quero descobrir a oferta da Black</a>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
